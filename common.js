@@ -56,7 +56,7 @@ function setAnswer3(page, id1, id2,id3){
     if (page ==2){
       if (md5(answer1)==teckensnitt&&md5(answer2)==bakgrund&&md5(answer3)==text) {
         sessionStorage.setItem("a1",answer2);
-        sessionStorage.setItem("a3",answer3);
+        sessionStorage.setItem("a2",answer3);
         setColor();
         box3.innerHTML="Korrekt!<br/>"+"Nästa <a href=\"sida3.html\">här</a>";
       }else
