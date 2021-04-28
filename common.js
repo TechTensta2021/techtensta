@@ -77,10 +77,9 @@ function checkAnswer(page,id,answer){
   }
 }
 function setColor(){
-  //v1 = (typeof v1 !== 'undefined') ?  v1 : '#fdbbd9'
   var v1=sessionStorage.getItem("a1");
   var v2=sessionStorage.getItem("a2");
   document.body.style.backgroundColor = v1;
   document.body.style.color=v2;
 }
-//window.addEventListener("load",setButton,false);
+
