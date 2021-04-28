@@ -95,3 +95,22 @@ td {
     color: #cd7f32;
 }
 
+input[type=text]{
+    border:2xp solid rgb(0,110,191);
+    width:50%;
+    padding:2xp 4xp;
+    box-sizing: border-box;
+}
+input[type=text]:focus{
+    background-color: lightblue;
+}
+
+input[type=button],input[type=submit],input[type=reset]{
+    background-color: green;
+    border:none;
+    color:white;
+    padding:4xp 4xp;
+    text-decoration: none;
+    margin: 4xp 2xp;
+    cursor: pointer;
+}
