@@ -73,7 +73,21 @@ function checkAnswer(page,id,answer){
 
   }else if(page==3){
     if (answer >=10) box4.innerHTML="Korrekt!<br/> Mycket bra jobbat!"
-    else box4.innerHTML="Fel svar, försök igen"
+    +"Nästa <a href=\"sida4.html\">här</a>";
+    else box4.innerHTML="Fel svar, försök igen";
+  }else if(page==4){
+    if(answer=='flag{PR7-R8z-kGK-Vrm}'|| answer=='{PR7-R8z-kGK-Vrm}'||answer=='PR7-R8z-kGK-Vrm'){
+      box5.innerHTML="Korrekt!<br/> Mycket bra jobbat!"
+    +"Nästa <a href=\"sida5.html\">här</a>";
+    }else{
+      box5.innerHTML="Fel svar, försök igen";
+    }
+  }else if(page ==5){
+    if (answer.toLowerCase= "alla kan koda"||answer=='flag{Alla-Kan-Koda}'){
+      box6.innerHTML="Korrekt!<br/> Mycket bra jobbat!"
+    }else{
+      box6.innerHTML="Fel svar, försök igen";
+    }
   }
 }
 function setColor(){
