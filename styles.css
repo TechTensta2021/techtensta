@@ -1,0 +1,116 @@
+div {
+    padding-left: 30px;
+    width: 800px;
+}
+
+body {
+    color: green;
+    background-color: black;
+    font-family: monospace;
+    padding-bottom: 100px;
+}
+
+a {
+    color: rgb(209, 33, 136);
+}
+
+th {
+    padding-right: 15px;
+}
+t{
+    padding-left:4em
+}
+p,
+td,
+th,
+li {
+    font-size: 14px;
+}
+
+img {
+    background-color: cornflowerblue;
+}
+
+table {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-right: green;
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+
+th,
+table thead {
+    text-align: left;
+}
+
+td {
+    border-bottom: darkgreen;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+}
+
+.cl {text-align:left;}
+
+.dotted-border { 
+    border: 2px solid green;
+    border-style: dotted;
+    border-radius: 5px;
+    padding: 5px;
+    width: fit-content;
+}
+
+.code { 
+    border: 1px solid green;
+    border-style: solid;
+    border-radius: 2px;
+    padding: 2px;
+    width: fit-content;
+    font-style: italic;
+    color: rgb(7, 131, 59);
+}
+
+.uncoloured-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.most-left-table {
+    border-left: green;
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+
+.gold {
+    color: rgb(255, 215, 0);
+}
+
+.silver {
+    color:#C0C0C0;
+}
+
+.bronze {
+    color: #cd7f32;
+}
+
+input[type=text]{
+    border:2xp solid rgb(0,110,191);
+    width:50%;
+    padding:2xp 4xp;
+    box-sizing: border-box;
+}
+input[type=text]:focus{
+    background-color: lightblue;
+}
+
+input[type=button],input[type=submit],input[type=reset]{
+    background-color: green;
+    border:none;
+    color:white;
+    padding:4xp 4xp;
+    text-decoration: none;
+    margin: 4xp 2xp;
+    cursor: pointer;
+}
