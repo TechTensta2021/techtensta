@@ -1,0 +1,133 @@
+<html>
+<meta charset="utf-8">
+<head>
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="common.js"></script>
+    <script>includeTitle();</script>
+</head>
+
+<body>
+    <script>includeHeader();</script>
+    <div>
+        <h1>
+            <script>includeOrganization();</script> - Hacker Challenge 2021
+        </h1>
+        <p>
+            Utmaning 1
+            - Hemliga ordet
+        </p>
+        <section id=box1>
+            <form>
+                <p>Som du kanske redan vet är all data på din dator och mobil
+                    representerad med binära tal (bitar), 0:r och 1:or. <br>
+                    Detta betyder att en vanlig text på datorn är representerad av en 
+                    serie siffror</p>
+                <p style="color:red">Uppgiften:</p>
+                <p>Du har fått ett hemligt ord på mattekluringbanan i Spångaby.
+                    <p style="color:blue">Skriv detta ord med binära tal.</p>
+                    </p>
+                <p>svar:<input type ="text" id="one">
+                <input type="button" id="button" value="spara" onclick="setAnswer(1,'one')">
+                </p>
+                <section id="box2">
+                    <p></p>
+                </section>
+                <p>
+                    Nedan ser du en 8-bitars ASCII-tabell som innehåller svenska 
+                    bokstäver representerade i dator-språk
+                </p>
+            </form> 
+            <table cellpadding="3" cellspacing="1" align="center" style="width: 240px">
+                <tbody><tr>
+
+                  <td width="80" class="cellHead"><b>BIN</b></td>
+                  <td width="50" class="cellHead"><b>Symbol</b></td>
+                </tr>
+                <tr><td>00100000</td><td>Space</td></tr>
+                <tr><td>00100001</td><td>!</td</tr>
+                <tr><td>00110000</td><td>0</td</tr>
+                <tr><td>00110001</td><td>1</td</tr>
+                <tr><td>00110010</td><td>2</td</tr>
+                <tr><td>00110011</td><td>3</td></tr>
+                <tr><td>00110100</td><td>4</td></tr>
+                <tr><td>00110101</td><td>5</td></tr>
+                <tr><td>00110110</td><td>6</td></tr>
+                <tr><td>00110111</td><td>7</td></tr>
+                <tr><td>00111000</td><td>8</td></tr>
+                <tr><td>00111001</td><td>9</td></tr>
+                <tr><td>00111101</td><td>=</td></tr>
+                <tr><td>01000001</td><td>A</td></tr>
+                <tr><td>01000010</td><td>B</td></tr>
+                <tr><td>01000011</td><td>C</td></tr>
+                <tr><td>01000100</td><td>D</td></tr>
+                <tr><td>01000101</td><td>E</td></tr>
+                <tr><td>01000110</td><td>F</td></tr>
+                <tr><td>01000111</td><td>G</td></tr>
+                <tr><td>01001000</td><td>H</td></tr>
+                <tr><td>01001001</td><td>I</td></tr>
+                <tr><td>01001010</td><td>J</td></tr>
+                <tr><td>01001011</td><td>K</td></tr>
+                <tr><td>01001100</td><td>L</td></tr>
+                <tr><td>01001101</td><td>M</td></tr>
+                <tr><td>01001110</td><td>N</td></tr>
+                <tr><td>01001111</td><td>O</td></tr>
+                <tr><td>01010000</td><td>P</td></tr>
+                <tr><td>01010001</td><td>Q</td></tr>
+                <tr><td>01010010</td><td>R</td></tr>
+                <tr><td>01010011</td><td>S</td></tr>
+                <tr><td>01010100</td><td>T</td></tr>
+                <tr><td>01010101</td><td>U</td></tr>
+                <tr><td>01010110</td><td>V</td></tr>
+                <tr><td>01010111</td><td>W</td></tr>
+                <tr><td>01011000</td><td>X</td></tr>
+                <tr><td>01011001</td><td>Y</td></tr>
+                <tr><td>01011010</td><td>Z</td></tr>
+                <tr><td>11000101</td><td>Å</td></tr>
+                <tr><td>11000100</td><td>Ä</td></tr>
+                <tr><td>11010110</td><td>Ö</td></tr>
+            </tbody></table>
+
+            <table cellpadding="3" cellspacing="1" align="center" style="width: 240px">
+                <tbody><tr>
+
+                    <td width="80" class="cellHead"><b>BIN</b></td>
+                    <td width="50" class="cellHead"><b>Symbol</b></td>
+
+                </tr>
+                <tr><td>01100001</td><td>a</td></tr>
+                <tr><td>01100010</td><td>b</td></tr>
+                <tr><td>01100011</td><td>c</td></tr>
+                <tr><td>01100100</td><td>d</td></tr>
+                <tr><td>01100101</td><td>e</td></tr>
+                <tr><td>01100110</td><td>f</td></tr>
+                <tr><td>01100111</td><td>g</td></tr>
+                <tr><td>01101000</td><td>h</td></tr>
+                <tr><td>01101001</td><td>i</td></tr>
+                <tr><td>01101010</td><td>j</td></tr>
+                <tr><td>01101011</td><td>k</td></tr>
+                <tr><td>01101100</td><td>l</td></tr>
+                <tr><td>01101101</td><td>m</td></tr>
+                <tr><td>01101110</td><td>n</td></tr>
+                <tr><td>01101111</td><td>o</td></tr>
+                <tr><td>01110000</td><td>p</td<</tr>
+                <tr><td>01110001</td><td>q</td></tr>
+                <tr><td>01110010</td><td>r</td></tr>
+                <tr><td>01110011</td><td>s</td></tr>
+                <tr><td>01110100</td><td>t</td></tr>
+                <tr><td>01110101</td><td>u</td></tr>
+                <tr><td>01110110</td><td>v</td></tr>
+                <tr><td>01110111</td><td>w</td></tr>
+                <tr><td>01111000</td><td>x</td></tr>
+                <tr><td>01111001</td><td>y</td></tr>
+                <tr><td>01111010</td><td>z</td></tr>
+                <tr><td>11100101</td><td>å</td></tr>
+                <tr><td>11100100</td><td>ä</td></tr>
+                <tr><td>11110110</td><td>ö</td></tr>
+                </tbody></table>
+                  
+        </section>
+
+        
+    </div>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+<meta charset="utf-8">
+<head>
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="common.js"></script>
+    <script>includeTitle();</script>
+</head>
+
+<body>
+    <script>includeHeader();</script>
+    <div>
+        <h1>
+            <script>includeOrganization();</script> - Hacker Challenge 2021
+        </h1>
+        <p>
+            Utmaning 2
+            - Stockholms Stads Grafiska Profil
+        </p>
+            <p>
+                Innan vi fortsätter med utmaningen så behöver vi se till så att uppgiften följer Stockholms Stads grafiska profil.<br> 
+                Ni behöver därför använda er av internet för att söka fram vilket profiltypsnitt vi använder oss av i 
+                Stockholms Stads verksamheter samt den blåa digitala färgkoden tillsammans med den ljusrosa syskonfärgen.<br>
+                Dessa färger sätter ni sedan som bakgrundsfärg och textfärg i svarsalternativen nedan.<br><br>
+                TIPS! <br>På denna hemsidas källkod kan ni hitta vilka färger och teckensnitt som används just nu och som vi alltså behöver ändra. 
+                Ni kan testa att ändra dessa värden för en förhandsvisning av slutresultatet innan ni besvarar rutorna nedan.
+            </p>
+            <p class="code">
+                Källkoden ser ut så här ungefär:<br>
+                <p>**** {
+                   <span style="color: #ff0000">*****:</span> *****;<br> 
+                    <span style="color: #ff0000">*********-****:</span> ****;<br>
+                    <span style="color: #ff0000">***-******:</span> *******;<br>
+                    <span style="color: #ff0000">padding-bottom:</span> 100px<br>
+                 }</p>
+                 
+            </p>
+        <p>
+            Färgerna kan antingen beskrivas med ett hexadecimalt färgkod eller i RGB färgkod.<br>
+            Svaren nedan ska innehålla den hexadecimala färgkoden för respektive färg som ni hittar på Stockholms Stads hemsidor. 
+            <p>Namn på teckensnitt:<br><input type ="text" id="tkn"></p>
+            <p>Namn på bakgrundsfärg (ljusrosa färg i Hex):<br><input type ="text" id="frg"></p>
+            <p>Namn på textfärg (blå färg i Hex):<br><input type ="text" id="txt"></p>
+            <input type="button" id="button1" value="spara" onclick="setAnswer3(3, 'tkn', 'frg','txt')">
+        </p>
+            <section id="box3">
+                <p></p>
+            </section>
+        <p>
+      
+        </p>
+    </div>
+</body>
+
+</html>

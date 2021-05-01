@@ -1,0 +1,50 @@
+<html>
+<meta charset="utf-8">
+<head>
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="common.js"></script>
+    <script>includeTitle();</script>
+</head>
+
+<body>
+    <script>includeHeader();</script>
+    <script>setColor();</script>
+    <div>
+        <h1>
+            <script>includeOrganization();</script> - Hacker Challenge 2021
+        </h1>
+        <p>
+            Utmaning 4
+            - Capture The Flag!
+        </p>
+        <p>
+            Nu ska du i källkoden till denna hemsida hitta en flagga och skriva in den i
+            textrutan nedan. Flaggan är i formen "flag{…" och är gömd bakom den svarta rutan! &#9786;
+            <br>
+            Du får skriva värdet antingen med eller utan måsvingar.
+                <p style="color: blueviolet;">
+                    Tips! om du använder Safari på macOS behöver du först göra följande:<br>
+                    I menyn längst upp till höger, Gå till Safari –›Inställningar–›Avancerat<br>
+                    och se till att <em>"Visa utvecklarmenyn i menyraden"</em> är markerat.
+                </p>
+            <br>
+
+        <p>svar:<input type ="text" id="fyra">
+                <input type="button" id="button4" value="spara" onclick="setAnswer(4,'fyra')">
+            </p>
+            <section id="box5">
+                <p></p>
+            </section>
+            <br>
+        </p>
+    </div>
+    <div>
+            <svg width="500" height="500">
+                <text x="0" y="15" fill="red">Flaggan är </text>
+                <text x="100" y="15" fill="red">flag{PR7-R8z-kGK-Vrm}</text>
+                <rect width="300" height="20" style="fill:rgb(0,0,0);stroke-width:3;stroke:rgb(0,0,0)" x="100" y="0" />
+              </svg>
+    </div>
+</body>
+
+</html>

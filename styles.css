@@ -20,6 +20,10 @@ th {
 t{
     padding-left:4em
 }
+p{
+    margin-right: 20%;
+}
+
 p,
 td,
 th,
@@ -113,4 +117,11 @@ input[type=button],input[type=submit],input[type=reset]{
     text-decoration: none;
     margin: 4xp 2xp;
     cursor: pointer;
+}
+img{
+    border: 1px solid rgb(219, 95, 95);
+    border-radius: 4px;
+    padding: 5px;
+    width:120px;height:140px;
+    margin-left: 150px;
 }
