@@ -88,13 +88,13 @@ function checkAnswer(page,id,answer){
 
   }else if(page==4){
     if(answer=='flag{PR7-R8z-kGK-Vrm}'|| answer=='{PR7-R8z-kGK-Vrm}'||answer=='PR7-R8z-kGK-Vrm')
-      box5.innerHTML="Korrekt!<br/> Mycket bra jobbat!"+"Nästa <a href=\"latLong.html\">här</a>";
+      box5.innerHTML="Korrekt!<br/> Mycket bra jobbat!"+"Nästa <a href=\"quickResponse.html\">här</a>";
     else
       box5.innerHTML="Fel svar, försök igen";
 
   }else if(page ==5){
     if (answer.toLowerCase== "alla-kan-koda"||answer=='flag{Alla-Kan-Koda}')
-      box6.innerHTML="Korrekt!<br/> Mycket bra jobbat!"+"Nästa <a href=\"quickResponse.html\">här</a>";
+      box6.innerHTML="Korrekt!<br/> Mycket bra jobbat!"+"Nästa <a href=\"latLong.html\">här</a>";
     else
       box6.innerHTML="Fel svar, försök igen";
 
