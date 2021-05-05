@@ -42,7 +42,7 @@ var bakgrund='c7a4e9535d83a84eb64119dd03919259';
 var text='7eac7bd4c5ae399d5118c5c09c67fa4d';
 var lat='9b68edde3794c229ce5c492869e7fd03';
 var long='fc7daed4b11f52f768fd0059202188f5';
-var bokchiffer='302438cad422e1b278fd93da4373940b';
+var bokchiffer='826fbeb32c60218202bf4a1d96d7eda1';
 
 function setAnswer(page,id){
     document.head.appendChild(scriptTag);
