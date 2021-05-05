@@ -100,7 +100,7 @@ function checkAnswer(page,id,answer){
 
   }else if(page==7){
     if(md5(answer.toLowerCase())==bokchiffer)
-      box8.innerHTML="Korrekt!<br/> Mycket bra jobbat!";
+       box8.innerHTML="Korrekt!<br/> Mycket bra jobbat!"+"Nästa <a href=\"tth2021.html\">här</a>";
     else
       box8.innerHTML="Fel,försök igen";
   }
