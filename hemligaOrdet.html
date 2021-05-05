@@ -5,20 +5,7 @@
     <script type="text/javascript" src="common.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.18.0/js/md5.min.js"></script>
     <script>includeTitle();</script>
-    <script>
-    var input = document.getElementById("button");
-
-    // Execute a function when the user releases a key on the keyboard
-    input.addEventListener("keyup", function(event) {
-    // Number 13 is the "Enter" key on the keyboard
-        if (event.keyCode === 13) {
-            // Cancel the default action, if needed
-            event.preventDefault();
-            // Trigger the button element with a click
-            setAnswer(1,'one');
-        }
-    });
-    </script>
+   
 </head>
 
 <body>
@@ -44,8 +31,19 @@
                     </p>
             
                  <p> Du kan behöva trycka på "spara" knappen två gånger innan svaret kollas upp. </p>
-                <p>svar:<input type ="text" id="one">
-                <input type="button" id="button" value="spara" onclick="setAnswer(1,'one')">
+                <p>svar:<input type ="text" id="one"  onkeypress="return enterKeyPressed(event)">
+                <input type="button" id="button" value="spara" onclick="setAnswer(1,'one') >
+                <script>
+                function enterKeyPressed(event) {
+                 if (event.keyCode == 13) {
+                 console.log("Enter key is pressed");
+                 setAnswer(1,'one')
+                 return true;
+                  } else {
+                  return false;
+                     }
+                   }
+                    </script>
                 </p>
                 <section id="box2">
                     <p></p>
