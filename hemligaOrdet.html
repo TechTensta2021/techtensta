@@ -32,9 +32,7 @@
                     </p>
             
                  <p> Du kan behöva trycka på "spara" knappen två gånger innan svaret kollas upp. </p>
-                <p>svar:<input type ="text" id="one"  onkeypress="return enterKeyPressed(event)">
-                <input type="button" id="button" value="spara" onclick="setAnswer(1,'one') >
-                <script>
+            <script>
                 function enterKeyPressed(event) {
                  if (event.keyCode == 13) {
                  setAnswer(1,'one')
@@ -43,6 +41,9 @@
                      }
                    }
                     </script>
+                <p>svar:<input type ="text" id="one"  onkeypress="return enterKeyPressed(event)">
+                <input type="button" id="button" value="spara" onclick="setAnswer(1,'one') >
+                
                 </p>
                 <section id="box2">
                     <p></p>
